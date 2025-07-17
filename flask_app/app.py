@@ -42,7 +42,7 @@ from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.instrumentation.logging import LoggingInstrumentor
 
 # 공통 설정
-endpoint = "http://otelcol.lgtm:4317"  # OpenTelemetry Collector 엔드포인트
+endpoint = "http://otel-collector-opentelemetry-collector.otel:4317"  # OpenTelemetry Collector 엔드포인트
 resource = Resource.create({"service.name": "flask-demo-service"})
 
 
